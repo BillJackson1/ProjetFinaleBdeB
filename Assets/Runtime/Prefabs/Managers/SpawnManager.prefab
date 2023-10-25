@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7550252423323294063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7550252423323294060}
+  - component: {fileID: 7550252423323294050}
+  - component: {fileID: 7550252423323294061}
+  - component: {fileID: 1563310203675778054}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: SpawnManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7550252423323294060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7550252423323294063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7550252423323294050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7550252423323294063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7490d48a57350142a508d3d7322bdca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEnemySize: 3200000032000000320000003200000032000000
+  enemyAmmoPoolSize: 1000
+  projectilePoolSize: 1000
+  enemyPrefabs:
+  - {fileID: 6601868383961787545, guid: 73fa6afd125fe7f44b96fdbf8180e767, type: 3}
+  - {fileID: 1278030839909902514, guid: ba6f133c77b46f843af39365a16bb6f7, type: 3}
+  - {fileID: 5608986638789766344, guid: 828ee9b2d5e90d449828b8336409315e, type: 3}
+  - {fileID: 2230516670665227617, guid: 22057f5727ffc0f40b925ed968947f62, type: 3}
+  - {fileID: 3113881174934184364, guid: 762617c7568190046a56df46c234183f, type: 3}
+  masterProjectilePrefab: {fileID: 8789831719442150978, guid: 71741e6b8190a684eb41dc67f1826a5f, type: 3}
+  enemyBulletPrefab: {fileID: 5075333173306300799, guid: 1133a9b05e1410846b8132ebfc989411, type: 3}
+  enemyLatencyAfterWakeUp: 1
+--- !u!114 &7550252423323294061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7550252423323294063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da112464b21401e4e89cebc807fb789b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpawnDistance: 50
+  enemiesMinSpawnRate:
+  - 1.5
+  - 0.9
+  - 0.8
+  - 1
+  - 0.8
+  enemiesMaxSpawnRate:
+  - 2
+  - 1.4
+  - 1.3
+  - 1.5
+  - 1.3
+  level: 1
+  nbNormalDeadBeforeElite: 50
+  nbEliteDeadBeforeBoss: 3
+  nbBossDeadBeforeNextStage: 1
+  spawn: 0
+  enemyElitePrefabs:
+  - {fileID: 3431919365232425163, guid: 024a77dcd3c365a4886a6877b01b69c0, type: 3}
+  - {fileID: 8864077123110049769, guid: 1670efc054a34d14c93131acb079b5f9, type: 3}
+  - {fileID: 6359656113485787472, guid: b775a2333468d6040b985b1bab575152, type: 3}
+  - {fileID: 4667017447498963543, guid: 8689af5310fad424e929dbcd1c3d3fb6, type: 3}
+  - {fileID: 6988570129540647879, guid: ec099af922faf5f459ea99de422270b9, type: 3}
+  enemyBossPrefabs:
+  - {fileID: 1721927560079117264, guid: efcd408e53a6139429ccff95f2bbb22c, type: 3}
+  - {fileID: 5932258098250578378, guid: 8e9f0b865b553764ca0ee597a6b0bddb, type: 3}
+  - {fileID: 4263724968597644577, guid: 9d3f9dcc0865a72459db4ebad454d840, type: 3}
+  - {fileID: 5755892518623081590, guid: 85f38b830c02f3649bf31a52105eb934, type: 3}
+  - {fileID: 3034543127878964930, guid: 1df0b1fc9f8a16b44acda281f9f38972, type: 3}
+  enemySpawner:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  radio: {fileID: 0}
+  isBossFight: 0
+  nbMaxEnemiesFromPool: 200
+  enemiesPoolCount: 0
+  menuManager: {fileID: 0}
+--- !u!114 &1563310203675778054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7550252423323294063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ce53e359eaf53489edcf1d42070f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpawningDistance: 20
+  shieldCratePrefab: {fileID: 7746969419455364364, guid: 6aba69472f2058a4cbfe2e302903ffed, type: 3}
+  shieldSpawnRate: 25
+  ballisticCratePrefab: {fileID: 2937318159937705934, guid: d8ce8b5e5bdeb094b8dc9f1799d54c31, type: 3}
+  ballisticSpawnRate: 18
